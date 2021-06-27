@@ -1,8 +1,8 @@
 {
   "name": "shoppinglist",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Project Ionic Unipam",
+  "homepage": "https://github.com/hribeirojob/shopping-list/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",

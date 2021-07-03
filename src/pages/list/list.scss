@@ -1,3 +1,44 @@
-page-list {
 
-}
+    ion-header{
+        --ion-color-prinmary: red;
+    }
+    
+
+      .ion-footer.ion-toolbar {
+        background-color: red;
+      }
+      
+      ion-footer {
+        text-align: center;
+        --ion-color-primary: gray !important;
+      }
+    .card-itens{
+        color: white;
+        top: 2%;
+        background-color: rgb(158, 156, 156);
+    }
+
+   
+    .title-page{
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: rgb(61, 108, 196);
+    }
+
+    .button-discont{
+        color: white;
+        font-weight: bold;
+        font-size: 1.0;
+        background-color: #0ddf0d;
+    }
+
+    .button-promotion{
+        color: white;
+        font-weight: bold;
+        font-size: 1.0;
+        background-color: rgb(240, 131, 6);
+    }
+   
+

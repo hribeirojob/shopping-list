@@ -1,20 +1,71 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>My First List</ion-title>
-  </ion-navbar>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-icon name="basket">
+      </ion-icon>
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
+<ion-content padding>
+  <div class="title-page">
+    Lista de produtos
+  </div>
+  
+
+  <ion-card class= "card-itens" ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+    
+    <ion-card-header class= "card-itens-head">
+      <h2>{{item.title}}</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+          <p>
+            Valor: {{item.value}}
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            Marca: {{item.mark}}
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>
+            Quantidade: {{item.qnt}}
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            Ref.: {{item.ref}}
+          </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <p>
+            <button class="button-discont" >{{item.discount}}% de desconto</button>
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <button class="button-promotion" >{{item.promotion}}</button>
+          </p>
+        </ion-col>
+      </ion-row>
+
+      
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
+
+<ion-footer class="footer">
+  <ion-toolbar>
+    <ion-title >Products Bela Vista - 2021</ion-title>
+  </ion-toolbar>
+</ion-footer>
